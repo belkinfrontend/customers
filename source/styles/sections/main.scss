@@ -1,0 +1,342 @@
+.main {
+    //flex: 10 1 730px;
+    padding: 0 15px;
+    color: rgba(0,0,0,.87);
+
+    .nav_main {
+        font-family: $ff-light;
+        font-weight: 300;
+        font-size: 14px;
+        border-bottom: 1px solid #d7d7d7;
+        padding: 9px 0;
+        margin-left: 0px; //max-width: 730px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .nav_links {
+            //margin-right: 170px;
+            a {
+                padding: 8px;
+                margin: 0 18px;
+                text-decoration: none;
+
+                @media (max-width: 1023px) {
+                    display: block;
+                }
+            }
+        }
+
+        span {
+            margin-right: 185px;
+
+            @media (max-width: 1024px) {
+                margin-right: 45px;
+            }
+        }
+    }
+
+
+    .table_blur {
+        font-family: $ff-light;
+        font-weight: 300;
+        font-size: 14px;
+        background: #fff;
+        border-collapse: collapse;
+        text-align: center;
+        width: 100%;
+
+        margin-top: 30px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+    }
+
+    .table_blur th {
+        background: #e6e8ed;
+        font-weight: 300;
+        padding: 10px 35px;
+        position: relative;
+        height: 41px;
+
+        &:nth-child(odd) {
+            background-color: #f4f5f7;
+        }
+
+        @media (max-width: 1024px) {
+            padding: 10px 5px;
+        }
+    }
+
+
+
+    .table_blur tr:nth-child(odd) {
+        background: #f4f5f7;
+    }
+
+
+
+    .table_blur td {
+        //border: 1px solid #e3eef7;
+        padding: 10px 35px;
+        position: relative;
+        height: 44px; //transition: all 0.5s ease;
+        &:first-child {
+            text-align: left;
+        }
+        &:last-child {
+            text-align: left;
+            padding-left: 34px;
+
+
+        }
+
+        img {
+            max-width: 22px;
+            margin-right: 12px;
+            vertical-align: middle;
+
+        }
+        a {
+            text-decoration: none;
+            vertical-align: middle;
+        }
+        .crossing {
+            svg {
+                margin-bottom: 5px;
+                margin-left: 10px;
+            }
+
+        }
+    }
+
+
+
+
+    .service_balans {
+        font-family: $ff-light;
+        font-weight: 300;
+        margin-top: 0px;
+        font-size: 18px;
+        margin-left: 12px;
+
+        border-bottom: 1px solid #d8d8d8;
+        padding-bottom: 36px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        &_recharge {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+
+
+            p {
+                margin-bottom: 8px;
+                margin-right: 10px;
+                span {
+                    color: #0097a7;
+                }
+            }
+            .service_balans_input {
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                text-align: center;
+
+                span {
+                    font-size: 12px;
+                    font-family: $ff-main;
+                    opacity: 0.54;
+                    margin-bottom: 4px;
+                    margin-top: 11px;
+
+                }
+
+                input {
+                    width: 150px;
+                    height: 35px;
+                    border-radius: 2px;
+                    border: none;
+                    background-color: #F4F5F7;
+                    text-align: center;
+                }
+
+		        input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+            }
+            a {
+                font-size: 16px;
+                text-decoration: none;
+                vertical-align: middle;
+                text-align: center;
+                width: 197px; //height: 37px;
+                padding: 10px;
+                border-radius: 2px;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
+                background-color: #f3f5f7;
+                
+                &:hover {
+                        background: darken(#f3f5f7, 3%);
+                    }
+            }
+        }
+        &_icons {
+            display: flex;
+            flex-flow: column wrap;
+            padding-top: 16px;
+
+
+            a {
+                text-decoration: none;
+                font-size: 12px;
+                margin-top: 8px;
+
+
+
+                svg {
+                    max-width: 20px;
+                    max-height: 20px;
+                    margin-right: 15px;
+
+
+                }
+                span {
+                }
+            }
+            .wallet {
+                svg {
+                    margin-top: 0px;
+                    margin-bottom: -3px;
+                }
+            }
+        }
+
+        & div {
+            margin-right: 10px;
+            //margin-left: 13px;
+        }
+    }
+
+
+
+
+    .buy {
+        margin-left: 16px;
+
+        .title {
+            font-size: 24px;
+            margin: 0;
+            margin-left: -2px;
+            margin-top: 26px;
+        }
+
+        &_services {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+
+            &_info {
+                flex-basis: 335px;
+                border-radius: 2px;
+                box-shadow: 0px 3px 5px rgba(0,0,0,0.24);
+                margin-top: 25px;
+                display: flex;
+                flex-flow: column wrap;
+                align-items: flex-start;
+
+                &:first-child {
+                    margin-right: 30px;
+
+                }
+                p {
+                    margin: 0;
+                }
+
+                img {
+                    max-width: 100%;
+		    border-top-left-radius: 2px;
+                    border-top-right-radius: 2px; 
+                }
+
+                .name {
+                    font-size: 24px;
+                    padding: 0 22px;
+                    margin-top: 22px;
+                }
+                .description {
+                    font-size: 14px;
+                    padding: 0 22px;
+                    padding-right: 15px;
+                    margin-top: 26px;
+
+                }
+                .price {
+                    font-size: 36px;
+                    padding: 0 22px;
+                    margin-top: 31px;
+                }
+                .set {
+                    font-size: 12px;
+                    padding: 0 22px;
+                    margin-top: 10px;
+                }
+                .button_buy {
+                    font-family: $ff-light;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 30px;
+                    display: inline-block;
+                    background-color: #ffc000;
+                    padding: 3px 0px;
+                    padding-left: 39px;
+
+                    text-align: center;
+                    vertical-align: middle;
+                    margin: 27px 0 21px 22px;
+                    border-radius: 2px;
+                    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.24);
+                    text-decoration: none;
+                    
+                    &:hover {
+                        background: lighten(#ffc000, 10%);
+                    }
+                    img {
+
+                        margin-right: 11px;
+                        margin-left: 42px;
+                        margin-bottom: 2px;
+                        font-size: 36px; //height: 19px;
+                        vertical-align: middle;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+
+
+
+
+
+    .nav_main_active {
+        border: 1px solid #d7d7d7; //border-bottom: none;
+    }
+
+
+
+
+    @media (max-width: 1024px) {
+        padding: 10px;
+    }
+
+
+}

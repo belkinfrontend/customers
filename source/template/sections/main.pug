@@ -1,0 +1,100 @@
+main.main
+    .nav_main
+        .nav_links
+            a(href="#") Личные данные
+            a(href="#").nav_main_active Мои сервисы
+            a(href="#") Мой статус
+        span Ваш ID: 1099
+        
+    section.service_table
+        table.table_blur
+            tr
+                th Наименование
+                th Количество
+                th Использовано
+                th Стоимость сервиса
+                th Действия
+            tr
+                td ТОП объявления
+                td 100
+                td 27
+                td 100 грн / 100 объявлений
+                td
+                    a(href="#")
+                        svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 24 24', width='24', height='24')
+                            defs
+                            path(id='', style='fill: #0097a7;', d='M20,7H5.6C4.4,7,4,6.4,4,6l16-1.5V3c0-0.6-0.6-1.1-1.2-1L3.7,4.7c-1,0.2-1.7,1-1.7,2V20c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2  V9C22,7.9,21.1,7,20,7z M18.5,16c-0.8,0-1.5-0.7-1.5-1.5c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5C20,15.3,19.3,16,18.5,16z')
+                    a.crossing(href="#")
+                        svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 17 14', width='17', height='14')
+                            defs
+                            path(id='', style='fill: #0097a7;', d='M17,7.07l-6.22,-6.07v3.47c-6.22,0.87 -8.89,5.2 -9.78,9.53c2.22,-3.03 5.33,-4.42 9.78,-4.42v3.55z')
+            tr
+                td СМС рассылка
+                td 2000
+                td 120
+                td 200 грн / 100 смс
+                td
+                    a(href="#")
+                        svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 24 24', width='24', height='24')
+                            defs
+                            path(id='', style='fill: #0097a7;', d='M20,7H5.6C4.4,7,4,6.4,4,6l16-1.5V3c0-0.6-0.6-1.1-1.2-1L3.7,4.7c-1,0.2-1.7,1-1.7,2V20c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2  V9C22,7.9,21.1,7,20,7z M18.5,16c-0.8,0-1.5-0.7-1.5-1.5c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5C20,15.3,19.3,16,18.5,16z')
+                    a.crossing(href="#")
+                        svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 17 14', width='17', height='14')
+                            defs
+                            path(id='', style='fill: #0097a7;', d='M17,7.07l-6.22,-6.07v3.47c-6.22,0.87 -8.89,5.2 -9.78,9.53c2.22,-3.03 5.33,-4.42 9.78,-4.42v3.55z')
+            tr
+                td Парсер базы
+                td 5 дней
+                td 2
+                td 200 грн / 1 день
+                td
+                    a(href="#")
+                        svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 24 24', width='24', height='24')
+                            defs
+                            path(id='', style='fill: #0097a7;', d='M20,7H5.6C4.4,7,4,6.4,4,6l16-1.5V3c0-0.6-0.6-1.1-1.2-1L3.7,4.7c-1,0.2-1.7,1-1.7,2V20c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2  V9C22,7.9,21.1,7,20,7z M18.5,16c-0.8,0-1.5-0.7-1.5-1.5c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5C20,15.3,19.3,16,18.5,16z')
+            tr
+                td(colspan="5")
+
+    
+    section.service_balans
+        .service_balans_recharge
+            p Баланс: 
+                span 1250 грн.
+            .service_balans_input
+                span Сумма перевода
+                input(type="number")
+            a(href="#") Пополнить баланс
+        .service_balans_icons
+            a(href="#")
+                svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 17 14', width='17', height='14')
+                    defs
+                    path(id='', style='fill: #555959;', d='M17,7.07l-6.22,-6.07v3.47c-6.22,0.87 -8.89,5.2 -9.78,9.53c2.22,-3.03 5.33,-4.42 9.78,-4.42v3.55z')
+                span Перевести деньги
+                
+        
+            a.wallet(href="#")
+                svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 24 20', width='24', height='20')
+                    defs
+                    path(id='', style='fill: #555959;', d='M20,7H5.6C4.4,7,4,6.4,4,6l16-1.5V3c0-0.6-0.6-1.1-1.2-1L3.7,4.7c-1,0.2-1.7,1-1.7,2V20c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2  V9C22,7.9,21.1,7,20,7z M18.5,16c-0.8,0-1.5-0.7-1.5-1.5c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5C20,15.3,19.3,16,18.5,16z')
+                span Купить сервис
+
+    section.buy
+        p.title Покупка сервисов
+        .buy_services
+            .buy_services_info
+                img(src="images/buy_1.png" alt="")
+                p.name ТОП объявления
+                p.description Использование ТОП объявлений позволяет оперативно продать объект недвижимости, выгодно выделив его среди остальных
+                p.price 1000 грн.
+                p.set Комплект из 10 объявлений
+                a.button_buy(href="#") Купить сервис
+                    img(src="images/angle.svg" title="" alt="")
+            
+            .buy_services_info
+                img(src="images/buy_2.png" alt="")
+                p.name SMS рассылка
+                p.description Использование SMS рассылки позволяет оперативно получать информацию о новых объектах в системе
+                p.price 1000 грн.
+                p.set Комплект из 100 SMS
+                a.button_buy(href="#") Купить сервис
+                    img(src="images/angle.svg" title="" alt="")
