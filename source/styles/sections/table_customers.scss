@@ -1,0 +1,123 @@
+.table_customers {
+    margin-right: 13px;
+    flex-basis: 400px;
+    flex-grow: 1;
+
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        vertical-align: baseline;
+
+        p {
+            font-size: 28px;
+            color: #607D8B;
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .where {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            color: #607D8B;
+
+            .city {
+                font-size: 18px;
+                border-bottom: 1px dashed $colorBorder;
+            }
+
+            img {
+                max-width: 16px;
+                margin-left: 6px;
+                vertical-align: text-bottom;
+            }
+
+        }
+
+        .table_filters {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            .triangle {
+                width: 0;
+                height: 0;
+                border-bottom: 14px solid #d1d1d2;
+                border-left: 14px solid transparent;
+                margin-right: 6px;
+                
+            }
+            
+            span {
+                //vertical-align: top;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .table_setting {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            img {
+                margin-right: 6px;
+                vertical-align: bottom;
+                max-width: 16px;
+            }
+            span {
+                vertical-align: top;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &_main {
+
+        .table_b {
+            font-family: $ff-light;
+            font-size: 12px;
+            background: #fff;
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+            margin-top: 5px;
+            box-shadow: $shadow;
+        }
+
+        .table_b th {
+            background: $colorSecondaryButton;
+            font-weight: 300;
+            //padding: 10px 35px;
+            position: relative;
+            height: 41px;
+            box-sizing: border-box;
+            border: 1px solid $colorBorder;
+            border-bottom: 6px solid $colorPrimary;
+            
+            &:nth-child(n+4):nth-child(-n+9) {
+                border-bottom: 6px solid $colorSecondary;
+            }
+    
+        }
+
+        .table_b td {
+            border: 1px solid $colorBorder;
+            position: relative;
+            height: 44px;
+            
+            img {
+                max-width: 22px;
+                margin: 5px;
+            }
+            
+            .district_customers {
+                display: block;
+                font-size: 11px;
+                color: $colorPlaceholder;
+            }
+        }
+    }
+}

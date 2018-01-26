@@ -1,0 +1,26 @@
+.back-panel {
+    flex-basis: 60px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background: $colorSecondaryButton;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .arrow-left {
+        margin: 21px 0 44px;
+    }
+    div {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 122px;
+        
+        img {
+            margin: 10px 0;
+        }
+    }
+}

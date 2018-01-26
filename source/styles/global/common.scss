@@ -14,9 +14,11 @@ body {
 }
 
 a {
-    color: rgba(0,0,0,.87);
+    color: $colorTextPrimary;
 }
-
+p {
+    margin: 0;
+}
 ::placeholder {
     font-size: 12px;
     font-family: $ff-light;
@@ -32,5 +34,6 @@ a {
 }
 
 .active_nav {
-    background-color: #ffc000 !important;
+    background-color: $colorPrimary !important;
+    color: #fff !important;
 }

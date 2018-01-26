@@ -1,0 +1,109 @@
+.filters {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 13px;
+    margin-right: 18px;
+    display: flex;
+    flex-flow: row wrap;
+    
+    select {
+        margin-top: 13px;
+        padding: 5px 24px;
+        border: none;
+        background-color: $colorPrimary;
+        color: #fff;
+        box-shadow: $shadow;
+        border-radius: 2px;
+        
+        option {
+            background-color: #fff;
+            color: $colorTextPrimary;
+        }
+    }
+    
+    input {
+        margin-top: 13px;
+        margin-left: 18px;
+        margin-right: 8px;
+        text-align: center;
+        padding: 7px 20px;
+        flex-grow: 1;    
+        border-radius: 2px;
+        
+        border: none;
+        background-color: $colorInputBackground;
+    }
+    
+    input::-webkit-input-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        input::-moz-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        input:-moz-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        input:-ms-input-placeholder {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+        input:focus::-webkit-input-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        input:focus::-moz-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        input:focus:-moz-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        input:focus:-ms-input-placeholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    
+    .button_wrap {
+        display: flex;
+        flex-flow: row nowrap;
+        align-self: stretch;
+        
+        margin-top: 13px;
+        
+        #button_clean {
+            border: none;
+            
+            background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIuMDAxIDUxMi4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMi4wMDEgNTEyLjAwMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiPgo8Zz4KCTxnPgoJCTxwYXRoIGQ9Ik0yOTQuMTExLDI1Ni4wMDFMNTA0LjEwOSw0Ni4wMDNjMTAuNTIzLTEwLjUyNCwxMC41MjMtMjcuNTg2LDAtMzguMTA5Yy0xMC41MjQtMTAuNTI0LTI3LjU4Ny0xMC41MjQtMzguMTEsMEwyNTYsMjE3Ljg5MiAgICBMNDYuMDAyLDcuODk0Yy0xMC41MjQtMTAuNTI0LTI3LjU4Ni0xMC41MjQtMzguMTA5LDBzLTEwLjUyNCwyNy41ODYsMCwzOC4xMDlsMjA5Ljk5OCwyMDkuOTk4TDcuODkzLDQ2NS45OTkgICAgYy0xMC41MjQsMTAuNTI0LTEwLjUyNCwyNy41ODYsMCwzOC4xMDljMTAuNTI0LDEwLjUyNCwyNy41ODYsMTAuNTIzLDM4LjEwOSwwTDI1NiwyOTQuMTFsMjA5Ljk5NywyMDkuOTk4ICAgIGMxMC41MjQsMTAuNTI0LDI3LjU4NywxMC41MjMsMzguMTEsMGMxMC41MjMtMTAuNTI0LDEwLjUyMy0yNy41ODYsMC0zOC4xMDlMMjk0LjExMSwyNTYuMDAxeiIgZmlsbD0iIzNmM2Y0MCIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=) no-repeat 8px $colorSecondaryButton;
+            box-shadow: $shadow;
+            border-radius: 2px;
+            font-size: 14px;
+            padding: 10px 40px;
+            align-self: stretch;
+
+            margin-right: 10px;
+        
+        &:hover {
+                background-color: darken($colorSecondaryButton, 3%);
+            }
+    }
+        #button_save {
+            border: none;
+            background: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTUwNC41MDIsNzUuNDk2Yy05Ljk5Ny05Ljk5OC0yNi4yMDUtOS45OTgtMzYuMjA0LDBMMTYxLjU5NCwzODIuMjAzTDQzLjcwMiwyNjQuMzExYy05Ljk5Ny05Ljk5OC0yNi4yMDUtOS45OTctMzYuMjA0LDAgICAgYy05Ljk5OCw5Ljk5Ny05Ljk5OCwyNi4yMDUsMCwzNi4yMDNsMTM1Ljk5NCwxMzUuOTkyYzkuOTk0LDkuOTk3LDI2LjIxNCw5Ljk5LDM2LjIwNCwwTDUwNC41MDIsMTExLjcgICAgQzUxNC41LDEwMS43MDMsNTE0LjQ5OSw4NS40OTQsNTA0LjUwMiw3NS40OTZ6IiBmaWxsPSIjM2YzZjQwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==) no-repeat 18px $colorSecondary;
+            box-shadow: $shadow;
+            border-radius: 2px;
+            font-size: 14px;
+            padding: 10px 50px;
+            align-self: stretch;
+    
+            &:hover {
+                    background-color: lighten($colorSecondary, 10%);
+                }
+        }
+    }
+    
+    
+}

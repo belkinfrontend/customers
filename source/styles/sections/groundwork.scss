@@ -1,0 +1,19 @@
+@import "sections/table_customers";
+@import "sections/widget";
+
+.groundwork {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 13px;
+}
+
+.click_info {
+    padding: 10px;
+    background: #eee;
+    font-size: 12px;
+    font-weight: 300;
+    
+    img {
+        max-width: 16px;
+    }
+}

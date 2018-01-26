@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main-style.min.css">
+    <title>Покупатели</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="profile-layout">
+        <header class="header" id="header">
+          <div class="wrap_logo_burger">
+            <div class="burger">
+              <div class="burger_line"></div>
+              <div class="burger_line"></div>
+              <div class="burger_line"></div>
+            </div>
+            <div class="logo"><img class="logo_picture" src="images/logo.png" alt="logo"></div>
+            <div class="logo_text">Система управления<br>агенством недвижимости</div>
+          </div>
+          <div class="inform">
+            <div class="item currency"><i class="fa fa-usd" aria-hidden="true"></i><span>курс доллара: 26.3 / 28.9</span></div>
+            <div class="item location"><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Днепропетровск</a></div>
+            <div class="item alarm"><i class="fa fa-bell-o" aria-hidden="true"></i><span>+5 / 20</span></div>
+            <div class="item shopping_basket"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>+2</span></div>
+            <div class="item profile"><img src="images/profile.png" alt="profile"><a href="#">Брюс Виллис</a></div>
+          </div><a class="arrow" href="#"><i class="fa fa-arrow-circle-right">   </i></a>
+        </header>
+        <div class="wrapper">
+          <div class="back-panel"><img class="arrow-left" src="images/arrow-left.svg" alt="Go back">
+            <div><img src="images/back-panel_1.png" alt="icon"><img src="images/back-panel_2.png" alt="icon"><img src="images/back-panel_3.png" alt="icon"><img src="images/back-panel_4.png" alt="icon"><img src="images/back-panel_5.png" alt="icon"></div>
+            <div><img src="images/back-panel_6.png" alt="icon"><img src="images/back-panel_7.png" alt="icon"><img src="images/back-panel_8.png" alt="icon"></div>
+          </div>
+          <div class="content">
+            <nav class="nav">
+              <div class="nav_links"><a class="active_nav" href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i><span>Покупатели</span></a><a href="#"><i class="fa fa-money" aria-hidden="true"></i><span>Продавцы</span></a><a href="#"><i class="fa fa-building-o" aria-hidden="true"></i><span>Арендодатели</span></a><a href="#"><i class="fa fa-users" aria-hidden="true"></i><span>Арендаторы</span></a></div>
+              <div class="search">
+                <input type="text" placeholder="поиск по названию объекта">
+                <input type="text" placeholder="ID объекта">
+                <div class="searcher"><img src="images/searcher.svg" alt="searcher"></div>
+              </div>
+            </nav>
+            <div class="filters">
+              <select>
+                <option>Фильтры</option>
+                <option>Фильтры</option>
+                <option>Фильтры</option>
+              </select>
+              <input type="text" placeholder="Вы можете добавить до 10 фильтров">
+              <div class="button_wrap">
+                <button id="button_clean">Очистить фильтры</button>
+                <button id="button_save">Сохранить фильтр</button>
+              </div>
+            </div>
+            <div class="groundwork">
+              <div class="table_customers">
+                <div class="table_customers_header">
+                  <p>Новые объекты</p>
+                  <div class="where"><span class="city">в Днепре</span><img src="images/down-arrow.svg"></div>
+                  <div class="table_filters"><span class="triangle"></span><span>у параметра включён фильтр</span></div>
+                  <div class="table_setting"><img src="images/gear-settings.svg"><span>настройка таблицы</span></div>
+                </div>
+                <div class="table_customers_main">
+                  <table class="table_b">
+                    <tr>
+                      <th>Фото/Видео</th>
+                      <th>Адрес</th>
+                      <th>Открыть</th>
+                      <th>Комнат</th>
+                      <th>Планировка</th>
+                      <th>Этаж</th>
+                      <th>Площадь</th>
+                      <th>Цена</th>
+                      <th>Источник</th>
+                      <th>Дата</th>
+                      <th>А</th>
+                      <th>Действия</th>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td><span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>10:00</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td><span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>11:30</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td><span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>12:30</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td><span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>14:45</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td><span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>12:30</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td><span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>вчера</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td><span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>вчера</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td> <span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>вчера</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/photo-camera.svg"><img src="images/youtube.svg"></td>
+                      <td><span>Гагарина пр., Казакова ул., 13/15</span><span class="district_customers">Бабушкинский р-н</span></td>
+                      <td><img src="images/down-arrow.svg"></td>
+                      <td>3</td>
+                      <td>Хрущевка</td>
+                      <td>3/9</td>
+                      <td>41/28,8</td>
+                      <td>120 000</td>
+                      <td>Агент</td>
+                      <td>10 окт</td>
+                      <td></td>
+                      <td><img src="images/speech-bubble.svg"><span>+23</span><img src="images/star.svg"></td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="table_customers_show">
+                  <p>wwww</p>
+                </div>
+                <div class="table_customers_pagination">
+                  <p>Пагинация</p>
+                </div>
+              </div>
+              <div class="widget"><img class="cancel" src="images/cancel.svg">
+                <div class="change_data"> <i class="fa fa-angle-left" aria-hidden="true"></i><span class="cyfral">13</span><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                <p class="month">октября</p>
+                <div class="add_new_task"><img class="more" src="images/more.svg"><span>Новая задача</span></div>
+                <div class="reminder">
+                  <div class="reminder_item"><span class="time">12:20</span><span class="description">У меня встреча с нотариусом Морозовой. Привезти ей пакет документов</span></div>
+                  <div class="reminder_item"><span class="time">12:20</span><span class="description">Приедет клиент посмотреть квартиру на Паникахи, 22</span></div>
+                  <div class="reminder_item"><span class="time">12:20</span><span class="description">Босс оперативка</span></div>
+                  <div class="reminder_item reminder_item_active"><span class="time">12:20</span><span class="description">Отправить ежедневный отчёт</span></div>
+                  <div class="reminder_item"><span class="time">12:20</span><span class="description">Английский</span></div>
+                  <div class="reminder_item"><span class="time">12:20</span><span class="description">Встреча с клиентом. Место: CASTA</span></div>
+                  <div class="reminder_item"><span class="time">12:20</span><span class="description">Просмотр тренинга по психологии продаж</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="click_info"><img src="images/info.svg"><span>* при клике на строку, она развернется в более полную информацию об объекте</span></div>
+            <footer class="footer">
+              <div class="footer_wrap">
+                <div class="copyright">
+                  <p>2016-2017 &copy; Agent24. АН &laquo;22 Столетие&raquo;. Все права защищены.</p>
+                  <p class="footer_email">email: <a href="mailto:info@agent24.ua">info@agent24.ua</a></p>
+                </div>
+                <ul class="links">
+                  <li><a href="#">Политика безопасности</a></li>
+                  <li><a href="#">Правила</a></li>
+                  <li><a href="#">Вопросы и ответы</a></li>
+                  <li><a href="#">Техническая поддержка</a></li>
+                </ul>
+              </div><a class="angle_up" href="#header"><img src="images/angle.svg" alt=""></a>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <script src="js/main.min.js"></script>
+    </div>
+  </body>
+</html>

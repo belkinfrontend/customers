@@ -1,0 +1,106 @@
+.widget {
+    font-size: 12px;
+    background-color: $colorSecondaryButton;
+    flex-basis: 214px;
+    margin-top: 40px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 2px;
+    box-shadow: $shadow;
+    position: relative;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+
+    .cancel {
+        max-width: 16px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        color: $colorIconFontAwesome;
+    }
+
+    .change_data {
+        margin-top: 15px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        .cyfral {
+            font-size: 92px;
+            margin: 0 10px;
+        }
+
+        i {
+            font-size: 22px;
+            color: $colorIconFontAwesome;
+        }
+
+    }
+    .month {
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $colorIconFontAwesome;
+        border-bottom: 1px solid $colorBorder;
+        padding-bottom: 20px;
+        margin: 0 22px;
+        margin-bottom: 20px;
+    }
+
+    .add_new_task {
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        &:hover span {
+            border-bottom: 2px solid $colorBorder;
+        }
+
+        .more {
+            max-width: 18px;
+            vertical-align: middle;
+            text-align: center;
+            margin-right: 5px;
+        }
+        span {
+            border-bottom: 2px dashed $colorBorder;
+            font-size: 18px;
+            vertical-align: middle;
+
+
+
+        }
+    }
+
+
+
+
+    .reminder {
+        display: flex;
+        flex-flow: column nowrap;
+
+        .reminder_item {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: flex-start; //margin: 10px 0;
+            padding: 10px 0;
+
+            .time {
+                flex-basis: 50px;
+                flex-grow: 0;
+                flex-shrink: 0; //margin: 0 auto;
+                text-align: center;
+            }
+
+            &_active {
+                background-color: $colorSecondary;
+            }
+        }
+
+    }
+}

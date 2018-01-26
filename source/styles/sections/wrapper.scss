@@ -1,0 +1,7 @@
+@import "sections/back-panel";
+@import "sections/content";
+
+.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}

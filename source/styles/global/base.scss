@@ -2,7 +2,7 @@ body {
     font-family: $ff-main;
     font-size: 1rem;
     line-height: 1.2;
-    color: rgba(0,0,0,.87);
+    color: $colorTextPrimary;
 }
 html {
     box-sizing: border-box;
