@@ -30,7 +30,8 @@
         align-items: center;
 
         .cyfral {
-            font-size: 92px;
+            font-size: 99px;
+            font-weight: 300;
             margin: 0 10px;
         }
 
@@ -41,7 +42,8 @@
 
     }
     .month {
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: 300;
         text-align: center;
         text-transform: uppercase;
         color: $colorIconFontAwesome;

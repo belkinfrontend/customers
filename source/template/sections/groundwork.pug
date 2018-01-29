@@ -5,3 +5,22 @@
 .click_info
     img(src="images/info.svg")
     span * при клике на строку, она развернется в более полную информацию об объекте
+    
+    
+.filter_price
+    p.price Цена, $
+    input(type="number" placeholder="Цена от: ")
+    input(type="number" placeholder="Цена до: ")
+    
+    
+    .sort
+        p Сортировать по:
+        
+        input(type="radio" id="radio1" name="radio-group")
+        label.label1(for="radio1") по возрастанию цены
+
+        input(type="radio" id="radio2" name="radio-group")
+        label.label2(for="radio2") по убыванию цены
+    
+    button(type="button") Применить фильтр
+    

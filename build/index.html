@@ -207,9 +207,12 @@
                     </tr>
                   </table>
                 </div>
-                <div class="table_customers_show">
-                  <p>wwww</p>
-                </div>
+                <div class="table_customers_show"><span>Показывать по
+                    <select>
+                      <option>25</option>
+                      <option>50</option>
+                      <option>100</option>
+                    </select></span><span>результатов</span><span>205 объектов</span></div>
                 <div class="table_customers_pagination">
                   <p>Пагинация</p>
                 </div>
@@ -230,6 +233,19 @@
               </div>
             </div>
             <div class="click_info"><img src="images/info.svg"><span>* при клике на строку, она развернется в более полную информацию об объекте</span></div>
+            <div class="filter_price">
+              <p class="price">Цена, $</p>
+              <input type="number" placeholder="Цена от: ">
+              <input type="number" placeholder="Цена до: ">
+              <div class="sort">
+                <p>Сортировать по:</p>
+                <input type="radio" id="radio1" name="radio-group">
+                <label class="label1" for="radio1">по возрастанию цены</label>
+                <input type="radio" id="radio2" name="radio-group">
+                <label class="label2" for="radio2">по убыванию цены</label>
+              </div>
+              <button type="button">Применить фильтр</button>
+            </div>
             <footer class="footer">
               <div class="footer_wrap">
                 <div class="copyright">
